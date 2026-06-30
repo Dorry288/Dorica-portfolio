@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorica News | Jukwaa la Uhakika la Habari na Uchambuzi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 1. HEADER (Logo, Jina, Search Bar, na Menu) -->
+    <header>
+        <div class="header-main container">
+            <div class="logo-container">
+                <h1 class="site-logo">Dorica<span class="logo-accent">News</span></h1>
+            </div>
+            
+            <!-- 6. SEARCH BAR -->
+            <div class="search-container">
+                <input type="text" placeholder="Tafuta habari hapa...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <!-- MENU YA TOVUTI -->
+        <nav>
+            <ul class="container">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. BREAKING NEWS (Scrolling Ticker) -->
+    <div class="breaking-news">
+        <div class="container ticker-wrapper">
+            <span class="breaking-title">BREAKING NEWS</span>
+            <marquee behavior="scroll" direction="left">
+                UCHUMI: Benki Kuu ya Tanzania yatoa mwongozo mpya kuhusu usalama wa miamala ya kidijitali... TEKNOLOJIA: Maonyesho makubwa ya mifumo ya AI kuzinduliwa rasmi jijini Arusha wiki ijayo...
+            </marquee>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="container content-wrapper">
+        
+        <!-- SEHEMU YA KUSHOTO (Habari Kuu, Latest News, Video, Gallery) -->
+        <section class="main-content-area">
+            
+            <!-- 3. HEADLINE NEWS (Habari Kubwa ya Siku) -->
+            <section class="headline-section">
+                <div class="headline-card">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200" alt="Cybersecurity na Uchumi">
+                    <div class="headline-overlay">
+                        <span class="category-tag">Tanzania</span>
+                        <small class="story-date"><i class="fas fa-clock"></i> 30 Juni 2026 | 10:00 AM</small>
+                        <h2>USALAMA WA MTANDAO: Changamoto Mpya Zinazokabili Sekta ya Fedha na Hatua za Kuchukua</h2>
+                        <p>Uchambuzi wa kina kuhusu jinsi taasisi za kifedha nchini zinavyowekeza kwenye mifumo thabiti ya ulinzi wa data ili kukabiliana na ongezeko la mashambulizi ya kimtandao katika zama hizi za kidijitali.</p>
+                        <a href="news.html" class="read-more-btn font-white">Read More</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. LATEST NEWS (Orodha ya Habari za Hivi Karibuni) -->
+            <h2 class="section-title"><i class="fas fa-newspaper"></i> Latest News</h2>
+            <div class="latest-news-grid">
+                
+                <!-- Habari 1 -->
+                <article class="news-list-card">
+                    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=600" alt="Michezo">
+                    <div class="card-text">
+                        <span class="card-category">Michezo</span>
+                        <small class="card-time"><i class="fas fa-clock"></i> 30 Juni 2026 | 08:30 AM</small>
+                        <h3>MICHUANO YA KIMATAIFA: Maandalizi ya Vikosi Vyakamilika</h3>
+                        <p>Tathmini ya kina kutoka kwa wataalamu wa spoti kuhusu mbinu mpya zinazotumiwa na makocha msimu huu.</p>
+                        <a href="sports.html" class="read-more-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Habari 2 -->
+                <article class="news-list-card">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600" alt="Teknolojia">
+                    <div class="card-text">
+                        <span class="card-category">Teknolojia</span>
+                        <small class="card-time"><i class="fas fa-clock"></i> 29 Juni 2026 | 04:15 PM</small>
+                        <h3>MIFUMO MPYA: Jinsi 'Cloud Computing' Inavyookoa Gharama za Biashara</h3>
+                        <p>Utafiti unaonyesha kuwa kampuni ndogo na za kati zimeongeza ufanisi kwa kutumia mifumo salama ya utunzaji wa data mtandaoni.</p>
+                        <a href="technology.html" class="read-more-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- 8. VIDEO SECTION (YouTube Iframe) -->
+            <h2 class="section-title"><i class="fas fa-video"></i> Video Section</h2>
+            <div class="video-container-box">
+                <div class="iframe-wrapper">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Dorica News Video" allowfullscreen></iframe>
+                </div>
+                <h4>Uchambuzi Maalum: Mwelekeo wa Maendeleo ya Habari za Kidijitali nchini Tanzania</h4>
+            </div>
+
+            <!-- 9. GALLERY (Picha za Matukio) -->
+            <h2 class="section-title"><i class="fas fa-images"></i> Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=400" alt="Mkutano">
+                    <div class="gallery-desc">Mkutano wa Kidijitali</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400" alt="Biashara">
+                    <div class="gallery-desc">Ukuaji wa Viwanda</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400" alt="Uchambuzi">
+                    <div class="gallery-desc">Makaribisho ya Teknolojia</div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 7. SIDEBAR (Trending News, Categories, na Matangazo) -->
+        <aside class="bbc-sidebar">
+            
+            <!-- 5. CATEGORIES LLIYOBORESHWA -->
+            <div class="sidebar-block">
+                <h3 class="sidebar-title">Categories</h3>
+                <ul class="categories-list">
+                    <li><a href="news.html"><i class="fas fa-chevron-right"></i> Tanzania</a></li>
+                    <li><a href="news.html"><i class="fas fa-chevron-right"></i> Dunia</a></li>
+                    <li><a href="news.html"><i class="fas fa-chevron-right"></i> Biashara</a></li>
+                    <li><a href="sports.html"><i class="fas fa-chevron-right"></i> Michezo</a></li>
+                    <li><a href="news.html"><i class="fas fa-chevron-right"></i> Burudani</a></li>
+                    <li><a href="technology.html"><i class="fas fa-chevron-right"></i> Teknolojia</a></li>
+                </ul>
+            </div>
+
+            <!-- TRENDING NEWS -->
+            <div class="sidebar-block">
+                <h3 class="sidebar-title">Trending News</h3>
+                <ol class="trending-list">
+                    <li>
+                        <a href="news.html">Mabadiliko ya kiuchumi na athari zake kwenye masoko ya kikanda.</a>
+                        <small class="trend-time">Muda huu</small>
+                    </li>
+                    <li>
+                        <a href="technology.html">Zijue hatua 5 za kulinda akaunti zako dhidi ya wadukuzi.</a>
+                        <small class="trend-time">Saa 1 iliyopita</small>
+                    </li>
+                    <li>
+                        <a href="sports.html">Ratiba kamili ya michezo ya robo fainali yatangazwa rasmi.</a>
+                        <small class="trend-time">Saa 3 zilizopita</small>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- ADVERTISEMENT BOX -->
+            <div class="ad-box">
+                <span>Nafasi ya Tangazo</span>
+                <p>Wasiliana nasi kutangaza biashara yako hapa.</p>
+            </div>
+
+        </aside>
+    </main>
+
+    <!-- 10. FOOTER (Maelezo, Viungo, na Hakimiliki) -->
+    <footer>
+        <div class="footer-container container">
+            <div class="footer-about">
+                <h3>Dorica News</h3>
+                <p>Jukwaa huru na la kitaalamu linalokuletea habari za ukweli, uhakika na uchambuzi wa kina kutoka kila pembe ya dunia.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Viungo Muhimu</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Tufuatilie</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dorica News. Haki zote zimehifadhiwa.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
